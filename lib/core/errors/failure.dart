@@ -80,3 +80,8 @@ class ServerFailure extends Failure {
     }
   }
 }
+
+//خطا خاص بي التخزين المحلي
+class CachedFailure extends Failure {
+  const CachedFailure(super.messages);
+}
