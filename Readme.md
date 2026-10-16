@@ -4,16 +4,6 @@ A Flutter food-delivery app (Arabic-friendly error messages) backed by **Supabas
 (Auth + Postgres + Realtime). Browse burgers & sides, customise an order, manage a live cart,
 check out, and track order history.
 
-## 🧪 Try it now — Test Account
-
-No sign-up or email verification needed:
-
-| Email               | Password    |
-| ------------------- | ----------- |
-| `fadaihassan80.com` | `123456789` |
-
-> This is a shared demo account — please don't store personal data in it.
-
 ## ✨ Features
 
 - 🔐 Email/password authentication (sign up, login, logout)
@@ -53,9 +43,8 @@ lib/
 ## 🚀 Getting Started
 
 ```bash
-git clone <your-repo-url>
-cd hunhry_food
-cp .env.example .env      # then fill in your Supabase URL + anon key
+git clone <https://github.com/HASSAN-FADAI/food_app>
+cd hungry_food
 flutter pub get
 flutter run
 ```
@@ -65,7 +54,7 @@ flutter run
 1. Create a Supabase project and copy **Project URL** and **anon (public) key** into `.env`.
 2. Create tables: `profiles`, `products`, `cart_items`, `orders`, `order_items`.
 3. Run [`supabase/rls_policies.sql`](supabase/rls_policies.sql) to enable Row Level Security.
-4. Create the demo user: _Authentication → Users → Add user_ → `test@app.com` / `123456`
+
    with **Auto Confirm User** enabled.
 
 ## 🔒 Security Notes
